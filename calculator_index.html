@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Web</title>
+    <link type="image/jpg" rel="shortcut icon" href="/img/logo-themetroop1.jpg">
+    <link rel="stylesheet" href="js_styelsheet.css">
+</head>
+<body>
+    <br><br>
+    <h2 style="font-size:50px">Calculator by using Javascript </h2><br>
+    <div class="Screen_border"><br>
+    <input type="text" id="screen" >
+    <table class="border" style="width:80%">
+        <tr>
+          <td><button class="btn">C</button></td>
+          <td><button class="btn">%</button></td>
+          <td><button class="btn">X</button></td>
+          <td><button class="btn">+</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn">7</button></td>
+            <td><button class="btn">8</button></td>
+            <td><button class="btn">9</button></td>
+            <td><button class="btn">/</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn">4</button></td>
+            <td><button class="btn">5</button></td>
+            <td><button class="btn">6</button></td>
+            <td><button class="btn">-</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn">1</button></td>
+            <td><button class="btn">2</button></td>
+            <td><button class="btn">3</button></td>
+            <td rowspan="2"><button class="btn" style="height:100px;"> =</button></td>
+          </tr>
+          <tr>
+            <td  colspan="2"><button class="btn" style="width:333px">0</button></td>
+            <td><button class="btn">.</button></td>
+            
+            
+          </tr>
+    </table>
+    <br>
+    </div>
+
+<script>
+    let screen = document.getElementById('screen');
+buttons = document.querySelectorAll('button');
+let screenValue = '';
+for (item of buttons) {
+    item.addEventListener('click', (e) => {
+        buttonText = e.target.innerText;
+        console.log('Button text is ', buttonText);
+        if (buttonText == 'X') {
+            buttonText = '*';
+            screenValue += buttonText;
+            screen.value = screenValue;
+        }
+        else if (buttonText == 'C') {
+            screenValue = "";
+            screen.value = screenValue;
+        }
+        else if (buttonText == '=') {
+            screen.value = eval(screenValue);
+        }
+        else {
+            screenValue += buttonText;
+            screen.value = screenValue;
+        }
+
+    })
+}
+</script>
+</body>
+</html>

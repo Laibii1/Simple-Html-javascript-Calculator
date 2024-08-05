@@ -1,0 +1,62 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("/img/glaxy1.jpg");
+}
+.Screen_border{
+    background-color: #733d908a;
+    border: 2px #040205;
+    border-radius: 4px;
+    width: 60%;
+    justify-content: center;
+    margin: auto;
+}
+
+.border{
+    background-color: #733d908a;
+    border: 2px #040205;
+    border-radius: 4px;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+}
+.btn{
+    padding:5px; 
+    background-color: #180121c2;
+    margin:10px;
+    border:2px groove  rgb(15, 2, 33);
+    color:rgb(239, 223, 242);
+    width:150px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:25px;
+    box-shadow: 0 8px 16px 0 #35293f8e, 0 6px 20px 0 rgba(185, 176, 176, 0.19);
+}
+.btn:hover {
+    color: #fff;
+    background-color:#2c153b;
+    border-color: #2c153b;
+  }
+input{
+width:91%;
+font-size:28px;
+padding:10px;
+margin:22px;
+border:2px groove rgb(63, 53, 69);
+border-radius: 5px;
+background-color: rgb(255, 255, 255);
+text-align: right;
+}
+
+h2{
+    color:aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center;
+}
+label{
+    color:antiquewhite;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:left;
+    margin-left:260px;
+
+}
